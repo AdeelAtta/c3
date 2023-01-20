@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body{
+      max-width: 1440px ;
+      margin-left: auto;
+     margin-right: auto;
+      background: url(./images/pattern-background-desktop.svg);
+      background-size: contain;
+      background-position-y:top;
+      background-repeat: no-repeat;
+      background-color:  hsl(225, 100%, 94%);
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      padding: 50px 20px;
+      height: 100vh;
+      /* min-height: 600px; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+    }
+
+   
+
+    .card{
+      width: auto;
+      max-width: 450px;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-left:auto ;
+      margin-right: auto;
+    }
+
+    .title{
+      font-weight: 900;
+    }
+
+     h4{
+      font-weight: 700;
+    }
+
+    .description{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-img{
+      width: 100%;
+    }
+
+
+    .plan{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      width: 100%;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+     
+    }
+
+    .f1{ flex: 1;  padding: 20px;}
+    .f2{flex: 3;  text-align: left;
+
+    
+    }
+    .f3{flex: 1; padding: 20px;}
+
+
+    button,a{
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+    }
+
+    button{
+      color: white;
+      /* background-color:  hsl(224, 23%, 55%); */
+      /* background-color: hsl(225, 100%, 94%) ; */
+        background-color: hsl(223, 47%, 23%); 
+        border-radius: 10px;
+        box-shadow: 0px 20px 10px  hsl(225, 100%, 94%);
+        font-weight: 700;
+    }
+
+    p,h1,h2,h3,h4,h5,h6{
+      /* text-align: center; */
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      width: auto;
+      max-width: 30ch;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+    p, p a{
+      color: hsl(224, 23%, 55%);
+      text-decoration: none;
+    }
+
+    .desc{
+     
+      font-weight: 400;
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+
+  <section class="card">
+    <img class="hero-img" src="./images/illustration-hero.svg" alt="">
+    <div class="description">
+      <h1 class="title">Order Summary</h1>
+      <p class="desc" >You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
+      <div class="plan">
+        <img class="icon f1" src="./images/icon-music.svg" alt="">
+        <div class="f2">
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </div>
+        <a class="f3" href="#">Change</a>
+      </div>
+      <button>Proceed to Payment</button>
+      <p><a href="#">Cancel Order</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
